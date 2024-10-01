@@ -1,0 +1,95 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7d2d2;
+    margin: 20px;
+    padding: 0;
+}
+
+/* Flexbox layout for search area and image area */
+.results-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    height: 100%;
+}
+
+/* Search area with search bar, button, and movie details vertically */
+.search-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    margin-right: 10px;
+}
+
+/* Poster area to display image only */
+.poster-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 10px;
+}
+
+/* Styling the search bar */
+#searchBar {
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    padding: 10px;
+    border: 5px solid #080808;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    width: 900px;
+}
+
+/* Styling the search button */
+#SearchButton {
+    width: 100%;
+    height: 55px;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    top: 120px;
+    width: 900px;
+    left:25px;
+}
+
+#SearchButton:hover {
+    background-color: #6fd174;
+}
+
+/* Styling the movie details below the search button */
+.details {
+    font-size: 22px;
+    font-family: 'Times New Roman';
+    color: #333;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 170px;
+    width: 500px;
+    text-align: justify;
+
+}
+
+/* Styling the movie poster */
+#content img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 200px;
+    left: 600px;
+
+}
